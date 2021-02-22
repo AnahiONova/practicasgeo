@@ -2,7 +2,7 @@ AOS.init();
 
 function iniciaMapa() {
       var coordenadas = {
-            lat : 21.168422320531967, lng : -101.73453418359776
+            lat : 19.393906868527527, lng : -99.17455488787517
       }
 
       var map = new google.maps.Map(document.getElementById('mapa'),
