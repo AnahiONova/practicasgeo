@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(198, 250, 253);
+}
+
+.boton {
+  color: rgb(69, 231, 243) ;
+  border-color: rgb(69, 231, 243);
+  background-color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.boton:hover {
+  background-color: rgb(69, 231, 243); /* Green */
+  color: white;
+}
+
+.instrucciones {
+  color: rgb(1, 170, 164);
+  font-size: large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
