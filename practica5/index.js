@@ -18,12 +18,21 @@ function iniciaMapa() {
       let posicion = {
         lat: position.coords.latitude,
         lng: position.coords.longitude,
+      }
 
-        lat : 19.393906868527527, lng : -99.17455488787517
+      let posicion2 = {
+        lat : 19.393906868527527, 
+        lng : -99.17455488787517
       }
 
       const marker = new google.maps.Marker({
         position: posicion,
+        map,
+        title: "Marcador"
+      });
+
+      const marker2 = new google.maps.Marker({
+        position: posicion2,
         map,
         title: "Marcador"
       });
@@ -36,6 +45,10 @@ function iniciaMapa() {
 
       marker.addListener("click", ()=>{
         infowindow.open(map,marker);
+      });
+
+      marker2.addListener("click", ()=>{
+        infowindow.open(map,marker2);
       });
     
     });
