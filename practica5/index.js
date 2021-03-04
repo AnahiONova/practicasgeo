@@ -1,6 +1,6 @@
 var info = "<h1>Casa Anahi</h1>"
-var info = "<p><strong>Dirección:</strong>Residencial Cañada Diamante</p>"
-var info = "<p><strong>Teléfono:</strong>4778040128</p>"
+    info = "<p><strong>Dirección:</strong>Residencial Cañada Diamante</p>"
+    info = "<p><strong>Teléfono:</strong>4778040128</p>"
 
 function iniciaMapa() {
   var propiedades = {
