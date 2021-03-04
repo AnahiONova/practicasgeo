@@ -15,17 +15,13 @@ function iniciaMapa() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       }
+
+      const marker = new google.maps.Marker({
+        position: posicion,
+        map,
+        title: "Marcador"
+      });
+      
     });
   }
-
-  let posicion = {
-    lat : 19.393906868527527, 
-    lng : -99.17455488787517
-  }
-
-  const marker = new google.maps.Marker({
-    position: posicion,
-    map,
-    title: "Marcador"
-  });
 }
