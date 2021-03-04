@@ -1,3 +1,7 @@
+var info = "<h1>Casa Anahi</h1>"
+var info = "<p><strong>Dirección:</strong>Residencial Cañada Diamante</p>"
+var info = "<p><strong>Teléfono:</strong>4778040128</p>"
+
 function iniciaMapa() {
   var propiedades = {
     center: {
@@ -25,7 +29,7 @@ function iniciaMapa() {
       map.setCenter(posicion);
 
       const infowindow = new google.maps.InfoWindow({
-        content : "Hola este es el contenido"
+        content : info
       })
 
       marker.addListener("click", ()=>{
