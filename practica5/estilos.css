@@ -1,5 +1,6 @@
 #bg {
-  background-color: rgb(255, 209, 255);
+  background: rgb(167,18,143);
+  background: linear-gradient(0deg, rgba(167,18,143,1) 0%, rgba(215,47,189,1) 35%, rgba(255,147,244,1) 100%);
 }
 
 #map {

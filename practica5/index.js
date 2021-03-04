@@ -28,8 +28,10 @@ function iniciaMapa() {
         content : "Hola este es el contenido"
       })
 
-      infowindow.open(map,marker);
-
+      marker.addListener("click", ()=>{
+        infowindow.open(map,marker);
+      });
+    
     });
   }
 }
