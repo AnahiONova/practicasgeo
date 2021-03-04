@@ -22,7 +22,13 @@ function iniciaMapa() {
         title: "Marcador"
       });
 
-      map.setCenter();
+      map.setCenter(posicion);
+
+      const infowindow = new google.maps.InfoWindow({
+        content : "Hola este es el contenido"
+      })
+
+      infowindow.open(map,marker);
 
     });
   }
