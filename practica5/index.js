@@ -21,7 +21,9 @@ function iniciaMapa() {
         map,
         title: "Marcador"
       });
-      
+
+      map.setCenter();
+
     });
   }
 }
