@@ -17,7 +17,9 @@ function iniciaMapa() {
     navigator.geolocation.getCurrentPosition(position =>{
       let posicion = {
         lat: position.coords.latitude,
-        lng: position.coords.longitude
+        lng: position.coords.longitude,
+
+        lat : 19.393906868527527, lng : -99.17455488787517
       }
 
       const marker = new google.maps.Marker({
