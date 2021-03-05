@@ -3,13 +3,13 @@ var info = "<h1>Casa Anahi</h1>"
     info += "<p><strong>Teléfono:</strong>4778040128</p>"
 
 var info2 = "<h1>Parque Metropolitano</h1>"
-    info += "<p><strong>Teléfono:</strong>4778040128</p>"
+    info2 += "<p><strong>Teléfono:</strong>4778040128</p>"
 
 var info3 = "<h1>Universidad De La Salle Bajio</h1>"
-    info += "<p><strong>Teléfono:</strong>4778040128</p>"
+    info3 += "<p><strong>Teléfono:</strong>4778040128</p>"
 
 var info4 = "<h1>Costco</h1>"
-    info += "<p><strong>Teléfono:</strong>4778040128</p>"
+    info4 += "<p><strong>Teléfono:</strong>4778040128</p>"
 
 function iniciaMapa() {
   const mapa = document.getElementById("map")
