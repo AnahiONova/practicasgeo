@@ -12,7 +12,7 @@ var propiedades = {
 function iniciaMapa() {
   map = new google.maps.Map(document.getElementById("map"), propiedades);
   var icono = {
-    url: "https://media.giphy.com/media/41xheT8dgYlNBdwC2m/giphy.gif",
+    url: "https://media.giphy.com/media/ekLUVgno2sft0xNIjv/giphy.gif",
     scaledSize: new google.maps.Size(50,50),
     origin: new google.maps.Point(0,0),
     anchor: new google.maps.Point(0,0),
