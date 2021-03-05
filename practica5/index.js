@@ -3,6 +3,7 @@ var info = "<h1>Casa Anahi</h1>"
     info += "<p><strong>Teléfono:</strong>4778040128</p>"
 
 function iniciaMapa() {
+  const mapa = document.getElementById("map")
   var propiedades = {
     center: {
       lat : 19.393906868527527, lng : -99.17455488787517
@@ -10,9 +11,7 @@ function iniciaMapa() {
     zoom: 14
   }
 
-  const mapa = document.getElementById("map")
-  const map = new google.maps.Map(mapa,propiedades)
-
+  map = new google.maps.Map(mapa,propiedades)
 
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position =>{
@@ -21,13 +20,11 @@ function iniciaMapa() {
         lng: position.coords.longitude,
       }
 
-      const marker = new google.maps.Marker({
+      const PosMarker = {
         position: posicion,
         map,
         title: "Marcador"
-      });
-
-      map.setCenter(posicion);
+      };
 
       const PosMarker2 = {
         position: {
@@ -37,22 +34,25 @@ function iniciaMapa() {
         title: "Marcador 2"
       }
 
+      const marker = new google.maps.Marker(PosMarker);
       const marker2 = new google.maps.Marker(PosMarker2);
 
-      const infowindow = new google.maps.InfoWindow({
-        content:content
-      });
-    
-      marker2.addListener("click", ()=>{
-        infowindow.open(map,marker);
-      });
+      map.setCenter(posicion);
 
       const infowindow = new google.maps.InfoWindow({
-        content : info
+        content: content
+      });
+
+      const infowindow2 = new google.maps.InfoWindow({
+        content : content
       })
 
       marker.addListener("click", ()=>{
         infowindow.open(map,marker);
+      });
+    
+      marker2.addListener("click", ()=>{
+        infowindow2.open(map,marker);
       });
 
     });
