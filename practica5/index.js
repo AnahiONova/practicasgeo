@@ -13,12 +13,6 @@ function iniciaMapa() {
   const mapa = document.getElementById("map")
   const map = new google.maps.Map(mapa,propiedades)
 
-  const PosMarker2 = {
-    position: posicion,
-    msp,
-    title: "Marcador2"
-  }
-
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position =>{
       let posicion = {
@@ -30,6 +24,22 @@ function iniciaMapa() {
         position: posicion,
         map,
         title: "Marcador"
+      });
+
+      const PosMarker2 = {
+        position: posicion,
+        msp,
+        title: "Marcador2"
+      }
+
+      const marker2 = new google.maps.Marker(PosMarker2);
+
+      const infowindow = new google.maps.InfoWindow({
+        content:content
+      });
+    
+      marker2.addListener("click", ()=>{
+        infowindow.open(map,marker);
       });
 
       map.setCenter(posicion);
@@ -44,15 +54,5 @@ function iniciaMapa() {
 
     });
   }
-
-  const marker2 = new google.maps.Marker(PosMarker2);
-
-  const infowindow = new google.maps.InfoWindow({
-    content:content
-  });
-
-  marker2.addListener("click", ()=>{
-    infowindow.open(map,marker);
-  });
 
 }
