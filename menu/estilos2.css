@@ -91,6 +91,36 @@ body {
   border-image-source: linear-gradient(to left, #ff009d, #d53a9d);
 }
 
+.boton7 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #f50101, #ff7112);
+}
+
+.boton8 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #f700ff, #00ffb3);
+}
+
 .container-fluid {
   text-align: center;
   
