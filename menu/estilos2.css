@@ -121,6 +121,36 @@ body {
   border-image-source: linear-gradient(to left, #f700ff, #00ffb3);
 }
 
+.boton9 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #ff008c, #1100ff);
+}
+
+.boton10 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #00f7ff, #8000a7);
+}
+
 .container-fluid {
   text-align: center;
   
