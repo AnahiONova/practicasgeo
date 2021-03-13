@@ -9,7 +9,7 @@ var propiedades = {
 };
 
 function iniciaMapa(){
-  fetch('paises.json')
+  fetch('./paises.json')
   .then(function(response){
     console.log(response);
 
@@ -22,7 +22,7 @@ function iniciaMapa(){
         .then(function(respuesta){
           //console.log(respuesta);
           respuesta.json().then(function(datospaises){
-            console.log(datospaises); 
+            //console.log(datospaises); 
 
             datospaises.forEach(registro => {
 
