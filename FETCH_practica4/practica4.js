@@ -35,7 +35,7 @@ function iniciaMapa(){
                 let marker = new google.maps.Marker({
                   map: map,
                   position: new google.maps.LatLng(marcador.CapitalLatitude, marcador.CapitalLongitude),
-                  title: marcador.CountryName + '' + resgistro.cases
+                  title: marcador.CountryName + '' + registro.cases
                 });
                 marker.addListener('click', function(){
                   infowindow.open(map,marker);
