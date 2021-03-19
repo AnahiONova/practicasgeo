@@ -68,19 +68,19 @@ maxZoom: 10
 
 });
 
-document.getElementById('btnroadmap').addEventListener('click', function(){
+document.getElementById('btnRoadMap').addEventListener('click', function(){
 map.setMapTypeId('roadmap');
 });
 
-document.getElementById('btnsatellite').addEventListener('click', function(){
+document.getElementById('btnSatellite').addEventListener('click', function(){
 map.setMapTypeId('satellite');
 });
 
-document.getElementById('btnhybrid').addEventListener('click', function(){
+document.getElementById('btnHybrid').addEventListener('click', function(){
 map.setMapTypeId('hybrid');
 });
 
-document.getElementById('btnterrain').addEventListener('click', function(){
+document.getElementById('btnTerreno').addEventListener('click', function(){
 map.setMapTypeId('terrain');
 });
 
