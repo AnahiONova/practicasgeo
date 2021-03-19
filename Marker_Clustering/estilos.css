@@ -18,7 +18,9 @@ html, body {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
-  float:left;
+  Position:Absolute; 
+  left:50%; 
+  top:50%;
 
   color: white;
   border-image-source: linear-gradient(to left, #ff009d, #d53a9d);

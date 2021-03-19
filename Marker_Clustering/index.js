@@ -37,7 +37,7 @@ function iniciaMapa() {
     }
   );
 
-  var label = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   var marcadores = [];
   var cuenta = 1;
 
@@ -46,8 +46,8 @@ function iniciaMapa() {
     let marcador = new google.maps.Marker({
       map: map,
       position: localidad,
-      label: label[cuenta % labels.length]
-    })
+      label: labels[cuenta % labels.length]
+    });
 
     marcadores.push(marcador);
 
