@@ -19,8 +19,7 @@ html, body {
   border-image-slice: 1;
   border-width: 5px;
 
-  color: #8f8fff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
   font-weight: bold;
   border-image-source: linear-gradient(to left, #ff0080, #ff95ca);
 }
@@ -36,8 +35,7 @@ html, body {
   border-image-slice: 1;
   border-width: 5px;
 
-  color: #8f8fff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
   font-weight: bold;
   border-image-source: linear-gradient(to left, #9500da, #f16afd);
 }
@@ -53,8 +51,7 @@ html, body {
   border-image-slice: 1;
   border-width: 5px;
 
-  color: #8f8fff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
   font-weight: bold;
   border-image-source: linear-gradient(to left, #26a300, #74ff87);
 }
@@ -70,8 +67,7 @@ html, body {
   border-image-slice: 1;
   border-width: 5px;
 
-  color: #8f8fff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
   font-weight: bold;
   border-image-source: linear-gradient(to left, #12afdf, #7ff6ff);
 }
