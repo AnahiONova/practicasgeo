@@ -1,0 +1,68 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(211, 211, 255);
+}
+#mapa {
+  width: 100%;
+  height: 640px;
+}
+
+#btnRoadMap {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #ff009d, #d53a9d);
+}
+
+#btnSatelite {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #53f4ff, #0385ff);
+}
+
+#btnHybrid {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #ffe600, #ff7b00);
+}
+
+#btnTerreno {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #13ff13, #18792d);
+}
