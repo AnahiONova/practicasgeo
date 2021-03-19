@@ -12,23 +12,28 @@
 
   <div class="container-fluid">
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1>Google Maps Clustering</h1>
-          <div id="mapa"></div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Google Maps Clustering</h1>
+                <div id="mapa"></div>
+            </div>
         </div>
-      </div>
-      <div class="row p-2">
-        <div class="col-3 text-center">
-          <button id="btnRoadMap">Road</button>
-          <button id="btnSatelite">Satelite</button>
-          <button id="btnHybrid">Hybrid</button>
-          <button id="btnTerreno">Terreno</button>
+        <div class="row p-2">
+            <div class="col-3 text-center">
+                <button class="btn btn-primary" id="btnroadmap">roadmap</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-warning" id="btnsatellite">satellite</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-danger" id="btnhybrid">hybrid</button>
+            </div>
+            <div class="col-3 text-center">
+                <button class="btn btn-success" id="btnterrain">terrain</button>
+            </div>
         </div>
-      </div>
     </div>
   </div>
-  
 
   <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
   <!-- Google Maps -->
