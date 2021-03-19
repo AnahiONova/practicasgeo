@@ -8,7 +8,7 @@ html, body {
   height: 640px;
 }
 
-.btn {
+.btn1 {
   background: none;
   text-decoration: inherit;
   font-family: system-ui;
@@ -19,6 +19,59 @@ html, body {
   border-image-slice: 1;
   border-width: 5px;
 
-  color: white;
-  border-image-source: linear-gradient(to left, #8b48ff, #ff5dc4);
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #ff0080, #ff95ca);
+}
+
+.btn2 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #9500da, #f16afd);
+}
+
+.btn3 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #26a300, #74ff87);
+}
+
+.btn4 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #12afdf, #7ff6ff);
 }
