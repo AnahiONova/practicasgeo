@@ -1,27 +1,11 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  background-color: #ddddff;
+  background-color: #9a9aff;
 }
 #mapa {
   width: 100%;
   height: 640px;
-}
-
-.btn1 {
-  background: #ddddff;
-  text-decoration: inherit;
-  font-family: system-ui;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-
-  color: black;
-  font-weight: bold;
-  border-image-source: linear-gradient(to left, #ff0080, #ff95ca);
 }
 
 .btn2 {
@@ -37,7 +21,23 @@ html, body {
 
   color: black;
   font-weight: bold;
-  border-image-source: linear-gradient(to left, #9500da, #f16afd);
+  border-image-source: linear-gradient(to left, #ff0080, #00d9ff);
+}
+
+.btn4 {
+  background: #ddddff;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: black;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #ea00ff, #00ff73);
 }
 
 .btn3 {
@@ -53,10 +53,10 @@ html, body {
 
   color: black;
   font-weight: bold;
-  border-image-source: linear-gradient(to left, #26a300, #74ff87);
+  border-image-source: linear-gradient(to left, #ff0000, #fbff00);
 }
 
-.btn4 {
+.btn1 {
   background:  #ddddff;
   text-decoration: inherit;
   font-family: system-ui;
@@ -69,5 +69,33 @@ html, body {
 
   color: black;
   font-weight: bold;
-  border-image-source: linear-gradient(to left, #12afdf, #7ff6ff);
+  border-image-source: linear-gradient(to left, #ff006a, #ff8800);
+}
+
+.btn1:hover {
+  background: rgb(255,0,106);
+  background: linear-gradient(0deg, rgba(255,0,106,1) 0%, rgba(255,136,0,1) 100%);
+  border-image-source: linear-gradient(to left, #ffffff, #ffffff);
+  color: white;
+}
+
+.btn2:hover {
+  background: rgb(255,0,128);
+  background: linear-gradient(0deg, rgba(255,0,128,1) 0%, rgba(0,217,255,1) 100%);
+  border-image-source: linear-gradient(to left, #ffffff, #ffffff);
+  color: white;
+}
+
+.btn3:hover {
+  background: rgb(255,0,0);
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(251,255,0,1) 100%);
+  border-image-source: linear-gradient(to left, #ffffff, #ffffff);
+  color: white;
+}
+
+.btn4:hover {
+  background: rgb(234,0,255);
+  background: linear-gradient(0deg, rgba(234,0,255,1) 0%, rgba(0,255,115,1) 100%);
+  border-image-source: linear-gradient(to left, #ffffff, #ffffff);
+  color: white;
 }
