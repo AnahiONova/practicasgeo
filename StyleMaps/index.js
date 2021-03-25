@@ -1,4 +1,6 @@
 function iniciaMapa(){
+
+
     var styledMapType = new google.maps.StyledMapType(
         [
             {
@@ -102,7 +104,7 @@ function iniciaMapa(){
                 "elementType": "geometry.fill",
                 "stylers": [
                 {
-                    "color": "#32FF00"
+                    "color": "#023e58"
                 }
                 ]
             },
@@ -120,7 +122,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#00f7ff"
+                    "color": "#ff40ff"
                 }
                 ]
             },
@@ -129,7 +131,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#AA00FF"
+                    "color": "#304a7d"
                 }
                 ]
             },
@@ -156,7 +158,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#F277FA"
+                    "color": "#2c6675"
                 }
                 ]
             },
@@ -165,7 +167,7 @@ function iniciaMapa(){
                 "elementType": "geometry.stroke",
                 "stylers": [
                 {
-                    "color": "#780066"
+                    "color": "#255763"
                 }
                 ]
             },
@@ -247,7 +249,7 @@ function iniciaMapa(){
 
     var propiedades = {
         center: { 
-             lat: 48.858475960332214, lng: 2.2945885859913795  
+             lat: 19.51364948743075, lng:  -99.14214454004772   
         },
         zoom: 14,
         mapTypeControlOptions: {
@@ -262,5 +264,5 @@ function iniciaMapa(){
 
     map.mapTypes.set('style_map', styledMapType);
     map.setMapTypeId('style_map');
-}
 
+}
