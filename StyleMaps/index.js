@@ -120,7 +120,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#ff40ff"
+                    "color": "#00f7ff"
                 }
                 ]
             },
@@ -247,7 +247,7 @@ function iniciaMapa(){
 
     var propiedades = {
         center: { 
-             lat: 21.152639, lng:  -101.711598
+             lat: 48.858475960332214, lng: 2.2945885859913795  
         },
         zoom: 14,
         mapTypeControlOptions: {
