@@ -102,7 +102,7 @@ function iniciaMapa(){
                 "elementType": "geometry.fill",
                 "stylers": [
                 {
-                    "color": "#023e58"
+                    "color": "#32FF00"
                 }
                 ]
             },
@@ -129,7 +129,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#304a7d"
+                    "color": "#AA00FF"
                 }
                 ]
             },
@@ -156,7 +156,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#2c6675"
+                    "color": "#F277FA"
                 }
                 ]
             },
@@ -165,7 +165,7 @@ function iniciaMapa(){
                 "elementType": "geometry.stroke",
                 "stylers": [
                 {
-                    "color": "#255763"
+                    "color": "#780066"
                 }
                 ]
             },
