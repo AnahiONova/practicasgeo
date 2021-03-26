@@ -22,7 +22,14 @@ html, body {
   border-width: 5px;
 
   color: white;
+  font-weight: bold;
   border-image-source: linear-gradient(to left, #d30000, #ff0000);
+}
+
+.btn1:hover {
+  background: rgb(251,63,63);
+  background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(255,0,0,1) 100%);
+  color: white;
 }
 
 .btn2 {
@@ -37,5 +44,12 @@ html, body {
   border-width: 5px;
 
   color: white;
+  font-weight: bold;
   border-image-source: linear-gradient(to left, #0f00e7, #2d2aff);
+}
+
+.btn2:hover {
+  background: rgb(63,105,251);
+  background: radial-gradient(circle, rgba(63,105,251,1) 0%, rgba(4,0,255,1) 100%);
+  color: white;
 }
