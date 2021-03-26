@@ -1,6 +1,4 @@
 function iniciaMapa(){
-
-
     var styledMapType = new google.maps.StyledMapType(
         [
             {
@@ -113,7 +111,7 @@ function iniciaMapa(){
                 "elementType": "labels.text.fill",
                 "stylers": [
                 {
-                    "color": "#3C7680"
+                    "color": "#803C69"
                 }
                 ]
             },
@@ -122,7 +120,7 @@ function iniciaMapa(){
                 "elementType": "geometry",
                 "stylers": [
                 {
-                    "color": "#ff40ff"
+                    "color": "#FF0097"
                 }
                 ]
             },
