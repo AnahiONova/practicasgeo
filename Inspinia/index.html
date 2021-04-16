@@ -5,15 +5,19 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INSPINIA</title>
+
+    <title>INSPINIA | Main view</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
     <link href="css/animate.css" rel="stylesheet">
-    <link href="estilos.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
+
 <div id="wrapper">
 
     <nav class="navbar-default navbar-static-side" role="navigation">
@@ -70,26 +74,15 @@
                 <div class="col-lg-12">
                     <div class="text-center m-t-lg">
                         <h1>
-                            UTILIZANDO INSPINIA
+                            INSPINIA Static Seed Project for BS4
                         </h1>
                         <small>
-                            Tema para proyectos web.
+                            It is an application skeleton for a typical web app. You can use it to quickly bootstrap your webapp projects and dev environment for these projects.
                         </small>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row  border-bottom white-bg dashboard-header">
-            <div class="col-md-3">
-                <h2>MAPA CON PLACES</h2>
-                <small>Sistemas Georeferenciados</small>
-                <input type="text" id="buscar" class="form-control">
-                <button class="btn btn-primary" id="btnBuscar"> Buscar</button>
-            </div>
-            <div class="col-md-9">
-                <div id="map"></div>
-            </div>
-    </div>
         <div class="footer">
             <div class="pull-right">
                 10GB of <strong>250GB</strong> Free.
@@ -98,16 +91,22 @@
                 <strong>Copyright</strong> Example Company &copy; 2014-2018
             </div>
         </div>
+
     </div>
 </div>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <script src="index.js"></script>
-    <script src="js/plugins/pace/pace.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADjOfdGIg-7JiqjoTstMN9el4g-nLhxxA&libraries=places&callback=iniciaMapa" async defer></script>
+<!-- Mainly scripts -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
+
 </body>
+
 </html>
