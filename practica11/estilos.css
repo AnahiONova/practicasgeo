@@ -8,3 +8,38 @@ html, body {
   width: 100%;
   height: 340px;
 }
+
+.titulo{
+  color: darkmagenta;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texto1{
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+.texto2{
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+.texto3{
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+.texto4{
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+.texto5{
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+.texto6{
+  color: darkmagenta;
+  font-weight: bold;
+}
