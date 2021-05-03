@@ -40,4 +40,5 @@ function muestraRegistros(doc){
       let id = e.target.parentElement.getAttribute("id");   
       registro.editar(id);
   });
+
 }
