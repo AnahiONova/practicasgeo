@@ -1,0 +1,32 @@
+#div2 {
+  background-color: rgb(27, 156, 150);
+  color: white;
+}
+#div2::placeholder {
+  color: white;
+}
+#boton{
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0rem 3rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: black;
+  border-image-source: linear-gradient(to left, #00adb9, #02ffdd);
+}
+#boton:hover {
+  background: rgb(20, 148, 137);
+  background: linear-gradient(0deg, rgba(20, 148, 137,1) 0%, rgb(71, 255, 255) 100%);
+  border-image-source: linear-gradient(to left, #229e8e, #229e8e);
+  color: white;
+}
+#fondo {
+  background-color: rgb(221, 254, 255);
+}
