@@ -10,20 +10,20 @@
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body class="bg-light">
-    <div class="container-fluid py-5">
+<body id="fondo">
+    <div class="container-fluid py-5" id="fondo">
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <h3><i class="fas fa-boxes text-primary"></i> Lista de productos</h3>
+                    <h3><i class="fas fa-boxes" id="texto"></i> Lista de productos</h3>
                 </div>
                 <div class="col-4">
-                    <button type="text" class="btn btn-primary"  data-toggle="modal" data-target="#ventananuevo" >Nuevo <i class="fas fa-plus"></i></button>
+                    <button type="text" class="btn" id="boton" data-toggle="modal" data-target="#ventananuevo" >Nuevo <i class="fas fa-plus"></i></button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-light">
+    <div class="container-fluid" id="fondo">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8 p-2">
@@ -35,8 +35,7 @@
     <!-- The Modal -->
     <div class="modal fade " id="ventananuevo">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-
+            <div class="modal-content" id="fondo">
             <!-- Modal Header -->
             <div class="modal-header">
                 <h4 class="modal-title">Nuevo producto</h4>
@@ -53,7 +52,7 @@
                             <input type="text" name="codigo" required class="form-control" placeholder="Código">
                         </div>
                         <div class="col-12 col-md-4 py-2">
-                            <button type="submit" class="btn btn-primary">Agregar <i class="fas fa-plus"></i></button>
+                            <button type="submit" class="btn" id="boton2">Agregar <i class="fas fa-plus"></i></button>
                         </div>
                     </div>
                 </form>
@@ -62,14 +61,13 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
             </div>
-
             </div>
         </div>
     </div>
     <!-- The Modal -->
     <div class="modal fade " id="ventanaeditar">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content" id="fondo">
             <!-- Modal Header -->
             <div class="modal-header">
                 <h4 class="modal-title">Editar producto</h4>
@@ -87,7 +85,7 @@
                         </div>
                         <div class="col-12 col-md-4 py-2">
                             <input type="hidden" name="ideditar" id="ideditar">
-                            <button type="submit" class="btn btn-primary">Guardar cambios <i class="fas fa-save"></i></button>
+                            <button type="submit" class="btn" id="boton2">Guardar cambios <i class="fas fa-save"></i></button>
                         </div>
                     </div>
                 </form>

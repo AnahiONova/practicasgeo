@@ -1,0 +1,46 @@
+#fondo {
+  background-color: rgb(252, 216, 252);
+}
+#boton {
+  background:  rgb(252, 216, 252);
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 15px;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: darkmagenta;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #a701a7, #ff62ff);
+}
+#boton:hover {
+  background: rgb(255, 93, 255);
+  border-image-source: linear-gradient(to left, #ff62ff, #a701a7);
+  color: white;
+}
+#boton2 {
+  background:  rgb(252, 216, 252);
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 15px;
+  padding: 0.5rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: darkmagenta;
+  font-weight: bold;
+  border-image-source: linear-gradient(to left, #a701a7, #ff62ff);
+}
+#boton2:hover {
+  background: rgb(255, 93, 255);
+  border-image-source: linear-gradient(to left, #ff62ff, #a701a7);
+  color: white;
+}
+#texto {
+  color: darkmagenta;
+}
