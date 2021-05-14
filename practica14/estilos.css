@@ -1,9 +1,22 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(219, 243, 219);
 }
 #map {
   width: 100%;
   height: 500px;
+}
+#contenedor {
+  background-color: rgb(219, 243, 219);
+}
+#H1 {
+  color: rgb(46, 196, 0);
+  font-family: fantasy;
+}
+#uno {
+  background-color: rgb(151, 248, 151);
+}
+#datos {
+  background-color:  rgb(46, 196, 0);
 }
