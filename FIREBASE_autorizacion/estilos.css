@@ -1,0 +1,9 @@
+html, body {
+  background-color: rgb(250, 232, 153);
+}
+img {
+  width: 80%;
+}
+.logged-in, .logged-out {
+  display: none;
+}

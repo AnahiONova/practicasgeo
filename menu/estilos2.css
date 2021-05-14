@@ -271,6 +271,21 @@ body {
   border-image-source: linear-gradient(to left, #ff3995, #d502ff);
 }
 
+.boton19 {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  color: white;
+  border-image-source: linear-gradient(to left, #00ffff, #03ff25);
+}
+
 .container-fluid {
   text-align: center;
   
