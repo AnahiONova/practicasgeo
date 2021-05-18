@@ -1,31 +1,20 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLS EATS</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <title>Firebase - Práctica 3</title>    
 
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <style>
-        img {
-            width: 80%;
-        }
-
-        .logged-in, .logged-out {
-            display: none;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">DLS EATS</a>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="../../images/worldwide.png" alt="" width="30" class="d-inline-block align-text-top mx-3">DLS EATS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,7 +28,7 @@
         </div>
     </nav>
 
-    <!-- Modal Ingresar -->
+    <!-- Modal Log In -->
     <div class="modal fade" id="ingresarmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -53,12 +42,12 @@
                 <form id="formaingresar">
                     <div class="row m-2">
                         <div class="col-12">
-                            <input type="email" class="form-control" required id="correo" placeholder="Ingrese su correo electrónico">
+                            <input type="email" class="form-control" required id="mail" placeholder="Ingrese su correo electrónico">
                         </div>
                     </div>
                     <div class="row m-2">
                         <div class="col-12">
-                            <input type="password" class="form-control" required id="contrasena" placeholder="Ingrese su contraseña">
+                            <input type="password" class="form-control" required id="password" placeholder="Ingrese su contraseña">
                         </div>
                     </div>
                     <div class="row text-center">
@@ -69,11 +58,6 @@
                     </div>
                 </form>
             </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <span onclick="entrarGoogle()" class="btn btn-primary btn-danger">Continuar con Gmail <i class="fas fa-plus"></i></span>
-                </div>
-            </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
@@ -81,8 +65,7 @@
         </div>
     </div>
 
-
-    <!-- Modal Registrate -->
+    <!-- Modal Register -->
     <div class="modal fade" id="registratemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -134,7 +117,7 @@
         </div>
     </div>
 
-    <!-- Modal MiCuenta -->
+    <!-- Modal Info Cuenta -->
     <div class="modal fade" id="micuentamodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -163,38 +146,54 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row text-center" id="listaDePlatillos">
+      
+          <div class="card col-12 col-md-4">
+            <img src="./img/pizzadepepperoni.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza de Pepperoni</h5>
+              <p class="card-text">Precio: 89</p>
+            </div>
+          </div>
+      
+          <div class="card col-12 col-md-4">
+            <img src="./img//pizzajamonconpina.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza de Jamón con piña</h5>
+              <p class="card-text">Precio: 110</p>
+            </div>
+          </div>
+      
+          <div class="card col-12 col-md-4">
+            <img src="./img//pizzadecarnes.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pizza de Carnes Frias</h5>
+              <p class="card-text">Precio: 130</p>
+            </div>
+          </div>
+      
+        </div>
+      </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <!--FOOTER-->
+    <div class="container-fluid py-5 bg-dark fixed-bottom">
+        <div class="container">
+        <div class="row text-white">
+            <div class="col">
+            <a name="piedepagina"></a>
+            <p>Desarrollado por Kenneth Artaban López López</p>
+            <p>Contacto: knatb.dev@gmail.com</p>
+            </div>
+        </div>
+        </div>
+    </div>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
 
-    <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyDT0Zemusnl0KASdXaIOUs6JResm1oCQzQ",
-        authDomain: "autorizacion-d8ce3.firebaseapp.com",
-        databaseURL: "https://autorizacion-d8ce3.firebaseio.com",
-        projectId: "autorizacion-d8ce3",
-        storageBucket: "autorizacion-d8ce3.appspot.com",
-        messagingSenderId: "436514863710",
-        appId: "1:436514863710:web:dc1bc7d430769a40f4d2cf"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    const auth = firebase.auth();
-
-    const db = firebase.firestore();
-
-    </script>
-
-    <script src="scripts/autorizacion.js"></script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/micuenta.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script type="text/javascript" src="scripts/micuenta.js"></script>
+    <script type="text/javascript" src="scripts/autorizacion.js"></script>
 </body>
 </html>
