@@ -1,0 +1,19 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightskyblue;
+  color: lightskyblue;
+}
+
+#map {
+  width: 100%;
+  height: 340px;
+}
+
+.tipo {
+  background-color: lightskyblue;
+}
+
+#encabezado {
+  color: lightskyblue;
+}
