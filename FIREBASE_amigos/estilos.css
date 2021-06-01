@@ -1,3 +1,20 @@
+#fondo {
+  background-color: rgb(252, 223, 239);
+}
+
+#nav {
+  background-color: deeppink;
+}
+
+#ingresarModalLabel {
+  color: deeppink;
+}
+
+#text {
+  color: rgb(252, 223, 239);
+  font-weight: bold;
+}
+
 img {
   width: 80%;
 }
