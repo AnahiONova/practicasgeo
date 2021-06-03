@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilos.css"/>
+  <title>Dieta</title>
+  <link rel="shortcut icon" href="./img/dieta.svg">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body id="body">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="nav">
+    <a class="navbar-brand" href="#"><img src="img/dieta.svg" alt="" width="50" class="d-inline-block align-text-top mx-3"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" id="nav">
+        <a class="nav-item nav-link logged-in" id="texto2" href="#" data-toggle="modal" data-target="#micuentamodal">Mi Cuenta</a>
+        <a class="nav-item nav-link logged-in" id="texto2" href="#" id="salir">Salir</a>
+        <a class="nav-item nav-link logged-out" id="texto2" href="#" data-toggle="modal" data-target="#ingresarmodal">Ingresar</a>
+        <a class="nav-item nav-link logged-out" id="texto2" href="#" data-toggle="modal" data-target="#registratemodal">Regístrate</a>
+        </div>
+    </div>
+  </nav>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="card" id="card6" style="width: 18rem;">
+        <img src="img/proteica.jpg" id="imgprot" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dieta Proteica</h5>
+          <p class="card-text">La dieta proteica, también llamada dieta hiperproteica, consiste básicamente en consumir alimentos ricos en proteínas, reduciendo la ingesta de grasas y azúcares.</p>
+        </div>
+        <div class="card-body">
+          <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/como-funcionan-dietas-proteicas-adelgazar-riesgos_1512">Conocer más</a>
+        </div>
+      </div>
+      <div class="card" id="card6" style="width: 18rem;">
+        <img src="img/keto.jpg" id="imgprot" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dieta Keto</h5>
+          <p class="card-text">La dieta keto consiste en ingerir más alimentos ricos en proteínas y grasas, dejando de lado la ingesta de carbohidratos con la finalidad de generar una 'cetosis' en el organismo; es decir, un exceso de cetonas en la sangre.</p>
+        </div>
+        <div class="card-body">
+          <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/que-es-dieta-keto-cetogenica_5285">Conocer más</a>
+        </div>
+      </div>
+      <div class="card" id="card6" style="width: 18rem;">
+        <img src="img/alcalina.jpg" id="imgprot" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dieta Alcalina</h5>
+          <p class="card-text">La dieta alcalina se basa en la teoría de que las enfermedades se desarrollan en un medio ácido (es decir, con un pH bajo) y que, por lo tanto, para prevenirlas conviene "alcalinizar" nuestro organismo, o sea, aumentar su pH.</p>
+        </div>
+        <div class="card-body">
+          <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/dieta-alcalina-beneficios-riesgos-como-hacerla_1885">Conocer más</a>
+        </div>
+      </div>
+      <div class="card" id="card6" style="width: 18rem;">
+        <img src="img/mediterranea.jpg" id="imgprot" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dieta Mediterranea</h5>
+          <p class="card-text">La dieta mediterránea se basa en los ingredientes propios de la agricultura local de los países con clima mediterráneo, fundamentalmente España e Italia. Se resume en reducir el consumo de carnes e hidratos de carbono en beneficio de más alimentos vegetales y grasas monoinsaturadas.</p>
+        </div>
+        <div class="card-body">
+          <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/alimentos-dieta-mediterranea_1637">Conocer más</a>
+        </div>
+      </div>
+      <div class="card" id="card6" style="width: 18rem;">
+        <img src="img/intermitente.jpg" id="imgprot" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ayuno Intermitente</h5>
+          <p class="card-text">Ayuno intermitente es un término que describe un periodo en el que se alternan períodos de ayuno y alimentación. El ayuno intermitente no es una dieta en sí misma, aunque puede ser utilizado junto con una restricción calórica para la pérdida de peso.</p>
+        </div>
+        <div class="card-body">
+          <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/ayuno-para-controlar-peso-sin-riesgos-salud_3722">Conocer más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="container">
+      <div class="col">
+        <div class="card" id="card2">
+          <p></p>
+          <img src="img/proteica.jpg" class="card-img-top" alt="..." id="imagen2">
+          <div class="card-body">
+            <h5 class="card-title">Dieta Proteica</h5>
+            <p class="card-text">La dieta proteica, también llamada dieta hiperproteica, consiste básicamente en consumir alimentos ricos en proteínas, reduciendo la ingesta de grasas y azúcares.</p>
+            <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/como-funcionan-dietas-proteicas-adelgazar-riesgos_1512">Conocer más</a>
+          </div>
+        </div>
+        <p></p>
+        <div class="card" id="card2">
+          <p></p>
+          <img src="img/keto.jpg" class="card-img-top" alt="..." id="imagen2">
+          <div class="card-body">
+            <h5 class="card-title">Dieta Keto</h5>
+            <p class="card-text">La dieta keto consiste en ingerir más alimentos ricos en proteínas y grasas, dejando de lado la ingesta de carbohidratos con la finalidad de generar una 'cetosis' en el organismo; es decir, un exceso de cetonas en la sangre.</p>
+            <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/que-es-dieta-keto-cetogenica_5285">Conocer más</a>
+          </div>
+        </div>
+        <p></p>
+        <div class="card" id="card2">
+          <p></p>
+          <img src="img/alcalina.jpg" class="card-img-top" alt="..." id="imagen2">
+          <div class="card-body">
+            <h5 class="card-title">Dieta Alcalina</h5>
+            <p class="card-text">La dieta alcalina se basa en la teoría de que las enfermedades se desarrollan en un medio ácido (es decir, con un pH bajo) y que, por lo tanto, para prevenirlas conviene "alcalinizar" nuestro organismo, o sea, aumentar su pH.</p>
+            <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/dieta-alcalina-beneficios-riesgos-como-hacerla_1885">Conocer más</a>
+          </div>
+        </div>
+        <p></p>
+        <div class="card" id="card2">
+          <p></p>
+          <img src="img/mediterranea.jpg" class="card-img-top" alt="..." id="imagen2">
+          <div class="card-body">
+            <h5 class="card-title">Dieta Mediterranea</h5>
+            <p class="card-text">La dieta mediterránea se basa en los ingredientes propios de la agricultura local de los países con clima mediterráneo, fundamentalmente España e Italia. Se resume en reducir el consumo de carnes e hidratos de carbono en beneficio de más alimentos vegetales y grasas monoinsaturadas.</p>
+            <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/alimentos-dieta-mediterranea_1637">Conocer más</a>
+          </div>
+        </div>
+        <p></p>
+        <div class="card" id="card2">
+          <p></p>
+          <img src="img/intermitente.jpg" class="card-img-top" alt="..." id="imagen2">
+          <div class="card-body">
+            <h5 class="card-title">Ayuno Intermitente</h5>
+            <p class="card-text">Ayuno intermitente es un término que describe un periodo en el que se alternan períodos de ayuno y alimentación. El ayuno intermitente no es una dieta en sí misma, aunque puede ser utilizado junto con una restricción calórica para la pérdida de peso.</p>
+            <a type="button" class="btn" id="boton2" href="https://www.sabervivirtv.com/nutricion/ayuno-para-controlar-peso-sin-riesgos-salud_3722">Conocer más</a>
+          </div>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </div> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--FOOTER-->
+    <div class="container-fluid py-2 fixed-bottom" id="footer">
+      <div class="container">
+        <div class="row text-white">
+          <div class="col">
+            <a name="piedepagina"></a>
+            <p id="footer1">Copyright © 2021 Analiza-T</p>
+            </div>
+            <div id="footer2">
+              <a class="navbar-brand" href="https://www.facebook.com/anahi.nova.3"><img src="img/facebook.svg" alt="" width="25"></a>
+              <a class="navbar-brand" href="https://www.instagram.com/anahinova/"><img src="img/instagram.svg" alt="" width="25"></a>
+              <a class="navbar-brand" href="https://api.whatsapp.com/send?phone=524771511674&fbclid=IwAR0vbPd2m0F9_actyH_p25RJrZQ07G3pGjQeUqXJn6YSzUFDogxQUhmYNnU"><img src="img/whatsapp.svg" alt="" width="25"></a>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

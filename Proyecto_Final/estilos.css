@@ -1,0 +1,180 @@
+#body {
+  background-color: rgb(211, 254, 255);
+}
+
+#nav {
+  background-color: rgb(3, 165, 170);
+}
+
+#card {
+  background-color: white;
+  text-align: center;
+  border-color: rgb(211, 254, 255);
+  border-width: 10px;
+}
+
+#texto1 {
+  text-align: left;
+}
+
+#texto2 {
+  color: white;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#boton {
+  background-color: rgb(3, 165, 170);
+  border-width: 1px;
+  color: white;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-color: rgb(211, 254, 255);
+}
+
+#boton:hover {
+  background-color: rgb(211, 254, 255);
+  border-width: 1px;
+  border-color: rgb(3, 165, 170);
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(3, 165, 170);
+}
+
+#basic-addon1 {
+  background-color: rgb(3, 165, 170);
+  color: white;
+}
+
+#bienvenida {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(3, 165, 170);
+  text-align: center;
+}
+
+#card2 {
+  width: 1000px;
+  display:flex;
+  margin:0 auto;
+}
+
+#imagen2 {
+  width: 450px;
+  display:flex;
+  border-color: white;
+  border-top: 3px;
+  border-width: 3px;
+  margin:0 auto;
+}
+
+#boton2 {
+  background-color: rgb(3, 165, 170);
+  float: center;
+  border-width: 1px;
+  color: white;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-color: rgb(211, 254, 255);
+}
+
+#boton2:hover {
+  background-color: rgb(211, 254, 255);
+  border-width: 1px;
+  border-color: rgb(3, 165, 170);
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(3, 165, 170);
+}
+
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+  overflow: hidden; }
+  
+  .video iframe,
+  .video object,
+  .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+}
+
+#card3 {
+  background-color: white;
+  text-align: center;
+  border-color: rgb(211, 254, 255);
+  border-width: 10px;
+}
+
+#card4 {
+  background-color: white;
+  text-align: left;
+  border-color: rgb(211, 254, 255);
+  border-width: 10px;
+}
+
+#textonat {
+  text-align: left;
+}
+
+#card5 {
+  background-color: white;
+  text-align: left;
+  border-color: rgb(211, 254, 255);
+  border-width: 3px;
+}
+
+#moras {
+  text-align: center;
+  font-family: fantasy;
+  margin-top: 30px;
+}
+
+#moras2 {
+  text-align: justify;
+  font-size: small;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#moras3 {
+  text-align: center;
+  font-family: fantasy;
+  margin-top: 30px;
+}
+
+#footer {
+  background-color: rgb(3, 165, 170);
+}
+
+#footer1 {
+  text-align: center;
+}
+
+#footer2 {
+  text-align: center;
+  align-items: center;
+}
+
+#card6 {
+  width: 1000px;
+  display:flex;
+  margin:0 auto;
+  background-color: white;
+  text-align: left;
+  border-color: rgb(211, 254, 255);
+  border-width: 10px;
+}
+
+#imgprot {
+  margin-top: 6px;
+}
+
+
+
+
+
