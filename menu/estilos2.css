@@ -316,7 +316,7 @@ body {
   border-image-source: linear-gradient(to left, #9ceb91, #ff9900);
 }
 
-.boton22 {
+.boton21 {
   background: none;
   text-decoration: inherit;
   font-family: system-ui;
@@ -328,7 +328,7 @@ body {
   border-width: 5px;
 
   color: white;
-  border-image-source: linear-gradient(to left, #ff0040, #00ff37);
+  border-image-source: linear-gradient(to left, #f81748, #1ff591);
 }
 
 .container-fluid {
