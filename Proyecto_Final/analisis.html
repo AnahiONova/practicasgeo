@@ -17,7 +17,6 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="nav">
     <a class="navbar-brand" href="#"><img src="img/analisis.svg" alt="" width="50" class="d-inline-block align-text-top mx-3"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav" id="nav">
@@ -32,100 +31,97 @@
  <h5 id="bienvenida">¡Bienvenido! Ingresa los resultados de tus análisis clínicos</h5>
  <div class="container">
   <div class="input-group mb-3">
-    <span class="input-group-text" id="hematies_value">Hematíes</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Hematíes" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="hematies_value" type="text" class="form-control" placeholder="Ingresa valor de Hematíes" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcHematies()" id="btnHematies">Hematíes</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="hemoglobina_value">Hemoglobina (Hb)</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Hemoglobina (Hb)" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="hemoglobina_value" type="text" class="form-control" placeholder="Ingresa valor de Hemoglobina (Hb)" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcHemoglobina()" id="btnHemoglobina">Hemoglobina (Hb)</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="hematocrito_value">Hematocrito (Hto)</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Hematocrito (Hto)" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="hematocrito_value" type="text" class="form-control" placeholder="Ingresa valor de Hematocrito (Hto)" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcHematocrito()" id="btnHematocrito">Hematocrito (Hto)</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="VCM_value">VCM</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de VCM" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="VCM_value" type="text" class="form-control" placeholder="Ingresa valor de VCM" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcVCM()" id="btnVCM">VCM</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="HCM_value">HCM</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de HCM" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="HCM_value" type="text" class="form-control" placeholder="Ingresa valor de HCM" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcHCM()" id="btnHCM">HCM</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="linfocitos_value">Linfocitos</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Linfocitos" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="linfocitos_value" type="text" class="form-control" placeholder="Ingresa valor de Linfocitos" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcLinfocitos()" id="btnLinfocitos">Linfocitos</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="neutrofilos_value">Neutrófilos</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Neutrófilos" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="neutrofilos_value" type="text" class="form-control" placeholder="Ingresa valor de Neutrófilos" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcNeutrofilos()" id="btnNeutrofilos">Neutrófilos</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="eosinofilos_value">Eosinófilos</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Eosinófilos" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="eosinofilos_value" type="text" class="form-control" placeholder="Ingresa valor de Eosinófilos" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcEosinofilos()" id="btnEosinofilos">Eosinófilos</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="plaquetas_value">Plaquetas</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Plaquetas" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="plaquetas_value" type="text" class="form-control" placeholder="Ingresa valor de Plaquetas" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcPlaquetas()" id="btnPlaquetas">Plaquetas</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="VSG_value">VSG</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de VSG" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="VSG_value" type="text" class="form-control" placeholder="Ingresa valor de VSG" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcVSG()" id="btnVSG">VSG</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="glucosa_value">Glucosa</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Glucosa" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="glucosa_value" type="text" class="form-control" placeholder="Ingresa valor de Glucosa" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcGlucosa()" id="btnGlucosa">Glucosa</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="urea_value">Urea</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Urea" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="urea_value" type="text" class="form-control" placeholder="Ingresa valor de Urea" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcUrea()" id="btnUrea">Urea</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="acidourico_value">Ácido Úrico</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Ácido Úrico" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="acidourico_value" type="text" class="form-control" placeholder="Ingresa valor de Ácido Úrico" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcAcidoUrico()" id="btnAcidoUrico">Ácido Úrico</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="creatinina_value">Creatinina</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Creatinina" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="creatinina_value" type="text" class="form-control" placeholder="Ingresa valor de Creatinina" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcCreatinina()" id="btnCreatinina">Creatinina</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="colesterol_value">Colesterol</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Colesterol" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="colesterol_value" type="text" class="form-control" placeholder="Ingresa valor de Colesterol" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcColesterol()" id="btnColesterol">Colesterol</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="trigliceridos_value">Triglicéridos</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Triglicéridos" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="trigliceridos_value" type="text" class="form-control" placeholder="Ingresa valor de Triglicéridos" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcTrigliceridos()" id="btnTrigliceridos">Triglicéridos</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="transaminasas_value">Transaminasas</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Transaminasas" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="transaminasas_value" type="text" class="form-control" placeholder="Ingresa valor de Transaminasas" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcTransaminasas()" id="btnTransaminasas">Transaminasas</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="fosfataalcalina_value">Fosfatasa alcalina</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Fosfatasa alcalina" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="fosfataalcalina_value" type="text" class="form-control" placeholder="Ingresa valor de Fosfatasa alcalina" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcFosfataAlcalina()" id="btnFosfataAlcalina">Fosfatasa alcalina</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="calcio_value">Calcio</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Calcio" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="calcio_value" type="text" class="form-control" placeholder="Ingresa valor de Calcio" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcCalcio()" id="btnCalcio">Calcio</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="hierro_value">Hierro</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Hierro" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="hierro_value" type="text" class="form-control" placeholder="Ingresa valor de Hierro" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcHierro()" id="btnHierro">Hierro</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="potasio_value">Potasio</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Potasio" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="potasio_value" type="text" class="form-control" placeholder="Ingresa valor de Potasio" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcPotasio()" id="btnPotasio">Potasio</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="sodio_value">Sodio</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Sodio" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="sodio_value" type="text" class="form-control" placeholder="Ingresa valor de Sodio" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcSodio()" id="btnSodio">Sodio</button>
   </div>
   <div class="input-group mb-3">
-    <span class="input-group-text" id="bilirrubina_value">Bilirrubina</span>
-    <input type="text" class="form-control" placeholder="Ingresa valor de Bilirrubina" aria-label="Username" aria-describedby="basic-addon1">
+    <input id="bilirrubina_value" type="text" class="form-control" placeholder="Ingresa valor de Bilirrubina" aria-label="Username" aria-describedby="basic-addon1">
+    <button class="btn btn-outline-secondary" type="button" onclick="CalcBilirrubina()" id="btnBilirrubina">Bilirrubina</button>
   </div>
- </div>
- <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn" type="button" id="boton" onclick="interpretar()">Interpretar</button>
  </div>
  <br>
  <br>
@@ -148,5 +144,8 @@
       </div>
     </div>
     <script src="analisis.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
