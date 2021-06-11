@@ -11,6 +11,8 @@
   text-align: center;
   border-color: rgb(211, 254, 255);
   border-width: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #texto1 {
@@ -126,6 +128,9 @@
   text-align: left;
   border-color: rgb(211, 254, 255);
   border-width: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0px;
 }
 
 #moras {
@@ -148,7 +153,7 @@
 }
 
 #footer {
-  background-color: rgb(3, 165, 170);
+  background-color: rgb(18, 183, 189);
 }
 
 #footer1 {
@@ -168,6 +173,8 @@
   text-align: left;
   border-color: rgb(211, 254, 255);
   border-width: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #imgprot {
@@ -606,7 +613,17 @@
   align-items: center;
 }
 
+#container1 {
+  background-color: rgb(3, 165, 170);
+}
 
+#container2 {
+  background-color: rgb(38, 230, 220);
+}
+
+#container3 {
+  background-color: rgb(43, 139, 127);
+}
 
 
 
