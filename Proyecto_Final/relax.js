@@ -32,7 +32,7 @@ function muestraLugares(){
 
             var service = new google.maps.places.PlacesService(map);
 
-            service.nearbySearch({ location: coordenadas, radius: 1000, type: [valor]}, function( results, status, pagination){
+            service.nearbySearch({ location: coordenadas, radius: 2000, type: [valor]}, function( results, status, pagination){
                 if(status !== 'OK') return;
 
                 crearMarcadores(results);
