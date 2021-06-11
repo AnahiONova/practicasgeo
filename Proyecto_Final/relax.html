@@ -27,26 +27,40 @@
         <a class="nav-item nav-link logged-out" id="texto2" href="#" data-toggle="modal" data-target="#registratemodal">Regístrate</a>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!--FOOTER-->
-      <div class="container-fluid py-2 fixed-bottom" id="footer">
-        <div class="container">
-          <div class="row text-white">
-            <div class="col">
-                <a name="piedepagina"></a>
-                <p id="footer1">Copyright © 2021 Analiza-T</p>
-                </div>
-                <div id="footer2">
-                <a class="navbar-brand" href="https://www.facebook.com/anahi.nova.3"><img src="img/facebook.svg" alt="" width="25"></a>
-                <a class="navbar-brand" href="https://www.instagram.com/anahinova/"><img src="img/instagram.svg" alt="" width="25"></a>
-                <a class="navbar-brand" href="https://api.whatsapp.com/send?phone=524771511674&fbclid=IwAR0vbPd2m0F9_actyH_p25RJrZQ07G3pGjQeUqXJn6YSzUFDogxQUhmYNnU"><img src="img/whatsapp.svg" alt="" width="25"></a>
-            </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="container">
+    <div class="container-fluid m-2">
+      <div class="row">
+          <div class="col-12">
+              <br>
+              <h1 class="encabezado">Places por ubicación</h1>
           </div>
-        </div>
       </div>
-</nav>
+      <div class="row">
+          <div class="col-4">
+              <select name="tipo" id="tipo" class="form-control">
+                  <option value="atm" id="tipo">Cajero automático</option>
+                  <option value="dentist">Dentista</option>
+                  <option value="clothing_store">Boutique</option>
+                  <option value="store">Tienda</option>
+              </select>
+              <ul id="placesList"></ul>
+          </div>
+          <div class="col-8">
+              <div id="map"></div>
+          </div>
+      </div>
+  </div>
+  </div>
+  <script src="relax.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAU6Y-vhkroV5pvylDiiEAOgmifPpjMEtI&libraries=places&callback=initMap"></script>
 </body>
 </html>

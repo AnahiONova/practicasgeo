@@ -588,7 +588,10 @@
   color: rgb(3, 165, 170);
 }
 
-
+#map {
+  width: 100%;
+  height: 340px;
+}
 
 
 
