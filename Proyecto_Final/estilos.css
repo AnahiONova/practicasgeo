@@ -593,5 +593,20 @@
   height: 340px;
 }
 
+#footerR {
+  background-color: rgb(70, 170, 3);
+}
+
+#footer1R {
+  text-align: center;
+}
+
+#footer2R {
+  text-align: center;
+  align-items: center;
+}
+
+
+
 
 
