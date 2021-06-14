@@ -1,15 +1,8 @@
-const formaIngresar = document.getElementById("formaIngresar");
-console.log(formaIngresar);
+const botonModal1 = document.getElementById("botonModal1");
 
-formaIngresar.addEventListener("submit", (e)=>{
-  e.preventDefault();
-
+botonModal1.addEventListener("click", () =>{
   let correo = formaIngresar['correo'].value;
   let contrasena = formaIngresar['contrasena'].value;
-
-  auth.signInWithEmailAndPassword(correo,contrasena).then(cred =>{
-    console.log('Entro');
-  }).catch(err => {
-    console.log(err)
-  });
+  console.log(correo);
+  console.log(contrasena);
 })
