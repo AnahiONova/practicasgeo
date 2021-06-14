@@ -7,9 +7,9 @@ botonModal1.addEventListener("click", (e) =>{
   let contrasena = formaIngresar['contrasena'].value;
 
   auth.signInWithEmailAndPassword(correo, contrasena).then(cred =>{
-    console.log('Entro');
+    console.log(cred);
   }).catch(err => {
     console.log(err)
   });
-  
+
 });
