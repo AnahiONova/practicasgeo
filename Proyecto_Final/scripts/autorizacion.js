@@ -9,7 +9,7 @@ botonModal1.addEventListener("click", (e) =>{
   auth.signInWithEmailAndPassword(correo, contrasena).then(cred =>{
     console.log(cred);
 
-    $('%ingresarModal').modal('hide');
+    $('#ingresarModal').modal('hide');
     formaIngresar.reset();
     formaIngresar.querySelector('.error').innerHTML='';
 
