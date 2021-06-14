@@ -40,6 +40,20 @@ function mensajeError(codigo){
   return mensaje;
 }
 
+const botonModal2 = document.getElementById("botonModal2");
+
+botonModal2.addEventListener("click", (e) =>{
+  e.preventDefault();
+
+  const correo = formaRegistrate['rcorreo'].value;
+  const contrasena = formaRegistrate['rcontrasena'].value;
+
+  auth.createUserWithEmailAndPassword(correo,contrasena).then(cred =>{
+    console.log('Se creo el usuario')
+  });
+
+});
+
 const salir = document.getElementById('salir');
 
 salir.addEventListener('click', (e) =>{
