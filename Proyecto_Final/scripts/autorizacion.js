@@ -1,6 +1,7 @@
 const formaIngresar = document.getElementById("formaIngresar");
 
 formaIngresar.addEventListener('submit', (e)=>{
+  alert('Hola');
   e.preventDefault();
 
   let correo = formaIngresar['correo'].value;
