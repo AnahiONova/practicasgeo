@@ -8,11 +8,37 @@ botonModal1.addEventListener("click", (e) =>{
 
   auth.signInWithEmailAndPassword(correo, contrasena).then(cred =>{
     console.log(cred);
+
+    $('%ingresarModal').modal('hide');
+    formaIngresar.reset();
+    formaIngresar.querySelector('.error').innerHTML='';
+
   }).catch(err => {
+    formaIngresar.querySelector('.error').innerHTML=mensajeError(err.code);
     console.log(err)
   });
 
 });
+
+function mensajeError(codigo){
+  let mensaje = '';
+
+  switch(codigo){
+    case 'auth/wrong-password':
+      mensaje = 'Su contraseña no es correcta';
+      break;
+    case 'auth/user-not-found':
+      mensaje = 'Usuario no encontrado';
+      break;
+    case 'auth/weak-password':
+      mensaje = 'Contraseña debil';
+      break;
+    default:
+      mensaje = 'Ocurrio un error al ingresar con este usuario';
+  }
+
+  return mensaje;
+}
 
 const salir = document.getElementById('salir');
 
