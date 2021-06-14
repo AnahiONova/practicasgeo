@@ -49,9 +49,16 @@ botonModal2.addEventListener("click", (e) =>{
   const contrasena = formaRegistrate['rcontrasena'].value;
 
   auth.createUserWithEmailAndPassword(correo,contrasena).then(cred =>{
-    console.log('Se creo el usuario')
-  });
+    console.log(cred)
+  }).then(() =>{
 
+    $('#registrateModal').modal('hide');
+    formaRegistrate.reset();
+    formaRegistrate.querySelector('.error').innerHTML = '';
+
+  }).catch(err =>{
+    formaRegistrate.querySelector('.error').innerHTML = mensajeError(err.code);
+  });
 });
 
 const salir = document.getElementById('salir');
