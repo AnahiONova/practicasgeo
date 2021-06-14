@@ -8,7 +8,7 @@ formaIngresar.addEventListener('submit', (e)=>{
 
   auth.signInWithEmailAndPassword(correo,contrasena).then(cred =>{
     console.log('Entro');
-  }).catch(err =>{
+  }).catch(err => {
     console.log(err)
   });
 })

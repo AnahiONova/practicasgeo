@@ -659,14 +659,28 @@
   border: none;
 }
 
-#botonModal {
+#botonModal1 {
   color: teal;
   border-color: teal;
   border-width: 1px;
   background-color: rgb(211, 254, 255);
 }
 
-#botonModal:hover {
+#botonModal1:hover {
+  background-color: teal;
+  border-width: 1px;
+  color: rgb(211, 254, 255);
+  border-color: rgb(211, 254, 255);
+}
+
+#botonModal2 {
+  color: teal;
+  border-color: teal;
+  border-width: 1px;
+  background-color: rgb(211, 254, 255);
+}
+
+#botonModal2:hover {
   background-color: teal;
   border-width: 1px;
   color: rgb(211, 254, 255);
