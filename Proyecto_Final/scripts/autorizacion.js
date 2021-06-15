@@ -1,10 +1,10 @@
-/*auth.onAuthStateChanged(user => {
+auth.onAuthStateChanged(user => {
   if(user){
     configurarMenu(user);
   }else {
     configurarMenu();
   }
-});*/
+});
 
 const botonModal1 = document.getElementById("botonModal1");
 
