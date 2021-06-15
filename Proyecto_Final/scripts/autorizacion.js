@@ -40,6 +40,16 @@ function mensajeError(codigo){
   return mensaje;
 }
 
+const salir = document.getElementById('salir');
+
+salir.addEventListener('click', (e) =>{
+  e.preventDefault();
+
+  auth.signOut().then(() =>{
+    alert('El usuario ha salido del sistema');
+  });
+});
+
 const botonModal2 = document.getElementById("botonModal2");
 
 botonModal2.addEventListener("click", (e) =>{
@@ -49,23 +59,22 @@ botonModal2.addEventListener("click", (e) =>{
   const contrasena = formaRegistrate['rcontrasena'].value;
 
   auth.createUserWithEmailAndPassword(correo,contrasena).then(cred =>{
-    console.log(cred)
+
+    return db.collection('usuarios').doc(cred.user.uid).set({
+      nombre: formaRegistrate['rnombre'].value,
+      telfono: formaRegistrate['rtelefono'].value,
+      direccion: formaRegistrate['rdireccion'].value
+    });
+
   }).then(() =>{
+
     $('#registrateModal').modal('hide');
     formaRegistrate.reset();
     formaRegistrate.querySelector('.error').innerHTML = '';
 
   }).catch(err =>{
+
     formaRegistrate.querySelector('.error').innerHTML = mensajeError(err.code);
-  });
-});
-
-const salir = document.getElementById('salir');
-
-salir.addEventListener('click', (e) =>{
-  e.preventDefault();
-
-  auth.signOut().then(() =>{
-    alert('El usuario ha salido del sistema');
+    
   });
 });
