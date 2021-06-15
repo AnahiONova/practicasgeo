@@ -1,6 +1,6 @@
 auth.onAuthStateChanged(user => {
   if(user){
-    db.collection('aparatos').onSnapshot(snapshot =>{
+    db.collection('Aparatos_Medicos').onSnapshot(snapshot =>{
       obtieneAparatos(snapshot.docs);
     });
 

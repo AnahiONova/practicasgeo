@@ -29,12 +29,12 @@ const obtieneAparatos = (data) => {
   if(data.length){
     const html = '';
     data.forEach(doc => {
-      let aparatos = doc.data();
+      let aparato = doc.data();
       const columna = `
         <div class="col-12 col-md-4">
-          <img src="img/${aparatos.imagen}" alt="${aparatos.nombre}" width="100%">
-          <p>${aparatos.nombre}</p>
-          <a href="https://wwww.paypal.me/grupohernandezalba/$ ${aparatos.precio}" target="_blank">
+          <img src="img/${aparato.imagen}" alt="${aparato.nombre}" width="100%">
+          <p>${aparato.nombre}</p>
+          <a href="https://wwww.paypal.me/grupohernandezalba/$ ${aparato.precio}" target="_blank">
               <button class="btn btn-info">Pagar Ahora</button>
           </a>
         </div>
