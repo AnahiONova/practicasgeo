@@ -20,6 +20,7 @@ const configurarMenu = (user) => {
   }else{
     listaloggedin.forEach(item => item.style.display = 'none');
     listaloggedout.forEach(item => item.style.display = 'block');
+    console.log('hola')
   }
 };
 
