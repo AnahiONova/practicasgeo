@@ -1,3 +1,6 @@
+const auth = firebase.auth();
+const db = firebase.firestore();
+
 auth.onAuthStateChanged(user => {
   if(user){
     db.collection('Aparatos_Medicos').onSnapshot(snapshot =>{
