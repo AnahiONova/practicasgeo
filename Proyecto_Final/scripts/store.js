@@ -46,6 +46,8 @@ const obtieneAparatos = (data) => {
     });
 
     listadeAparatos.innerHTML = html;
+  }else {
+    listadeAparatos.innerHTML = `<p class="text-center">Ingrese con sus claves para ver los aparatos medicos disponibles </p>`
   }
 }
 
