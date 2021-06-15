@@ -70,7 +70,7 @@ botonModal2.addEventListener("click", (e) =>{
 
     return db.collection('usuarios').doc(cred.user.uid).set({
       nombre: formaRegistrate['rnombre'].value,
-      telfono: formaRegistrate['rtelefono'].value,
+      telefono: formaRegistrate['rtelefono'].value,
       direccion: formaRegistrate['rdireccion'].value
     });
 
