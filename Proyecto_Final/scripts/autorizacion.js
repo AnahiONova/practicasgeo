@@ -51,7 +51,6 @@ botonModal2.addEventListener("click", (e) =>{
   auth.createUserWithEmailAndPassword(correo,contrasena).then(cred =>{
     console.log(cred)
   }).then(() =>{
-
     $('#registrateModal').modal('hide');
     formaRegistrate.reset();
     formaRegistrate.querySelector('.error').innerHTML = '';
