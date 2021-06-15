@@ -36,8 +36,7 @@ const obtieneAparatos = (data) => {
       const columna = `
         <div class="col-12 col-md-4">
           <img src="img/${aparato.imagen}" alt="${aparato.nombre}" width="100%">
-          <p>${aparato.nombre}</p>
-          <p>${aparato.precio}</p>
+          <p class="textoAparatos">${aparato.nombre}$ ${aparato.precio}</p>
           <a href="https://wwww.paypal.me/grupohernandezalba/$ ${aparato.precio}" target="_blank">
               <button class="btn btn-info">Pagar Ahora</button>
           </a>
