@@ -38,7 +38,7 @@ const obtieneAparatos = (data) => {
           <img src="img/${aparato.imagen}" alt="${aparato.nombre}" width="100%">
           <p class="textoAparatos">${aparato.nombre}$ ${aparato.precio}</p>
           <a href="https://wwww.paypal.me/grupohernandezalba/$ ${aparato.precio}" target="_blank">
-              <button class="btn btn-info">Pagar Ahora</button>
+              <button class="btn" id="botonAparato">Pagar Ahora</button>
           </a>
         </div>
       `;
@@ -46,6 +46,8 @@ const obtieneAparatos = (data) => {
     });
 
     listadeAparatos.innerHTML = html;
+  }else {
+    listadeAparatos.innerHTML = `<p class="text-center">Ingrese con sus claves para ver los aparatos medicos disponibles </p>`
   }
 }
 

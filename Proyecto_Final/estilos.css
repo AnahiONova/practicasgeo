@@ -703,6 +703,24 @@
 
 .textoAparatos {
   color: teal;
-  font-weight: bold;
+  font-size: 3;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#botonAparato {
+  background-color: teal;
+  border-width: 1px;
+  color: rgb(211, 254, 255);
+  border-color: rgb(211, 254, 255);
+  margin-bottom: 14px;
+}
+
+#botonAparato:hover {
+  color: teal;
+  border-color: teal;
+  border-width: 1px;
+  background-color: rgb(211, 254, 255);
 }
 

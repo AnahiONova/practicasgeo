@@ -6,6 +6,7 @@ auth.onAuthStateChanged(user => {
 
     configurarMenu(user);
   }else {
+    obtieneAparatos([]);
     configurarMenu();
   }
 });
