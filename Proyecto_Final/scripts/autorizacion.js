@@ -1,5 +1,9 @@
 auth.onAuthStateChanged(user => {
   if(user){
+    db.collection('aparatos').onSnapshot(snapshot =>{
+      obtieneAparatos(snapshot.docs);
+    });
+
     configurarMenu(user);
   }else {
     configurarMenu();

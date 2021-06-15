@@ -21,4 +21,29 @@ const configurarMenu = (user) => {
     listaloggedin.forEach(item => item.style.display = 'none');
     listaloggedout.forEach(item => item.style.display = 'block');
   }
+};
+
+const listadeAparatos = document.getElementById('listadeAparatos');
+
+const obtieneAparatos = (data) => {
+  if(data.length){
+    const html = '';
+    data.forEach(doc => {
+      let aparatos = doc.data();
+      const columna = `
+        <div class="col-12 col-md-4">
+          <img src="img/${aparatos.imagen}" alt="${aparatos.nombre}" width="100%">
+          <p>${aparatos.nombre}</p>
+          <a href="https://wwww.paypal.me/grupohernandezalba/$ ${aparatos.precio}" target="_blank">
+              <button class="btn btn-info">Pagar Ahora</button>
+          </a>
+        </div>
+      `;
+
+      html += columna;
+    });
+
+    listadeAparatos.innerHTML = html;
+  }
 }
+
