@@ -28,11 +28,11 @@ const listadeAparatos = document.getElementById('listadeAparatos');
 const obtieneAparatos = (data) => {
   if(data.length){
 
-    const html = '';
+    let html = '';
     data.forEach(doc => {
 
-      let aparato = doc.data();
-      
+      const aparato = doc.data();
+
       const columna = `
         <div class="col-12 col-md-4">
           <img src="img/${aparato.imagen}" alt="${aparato.nombre}" width="100%">
