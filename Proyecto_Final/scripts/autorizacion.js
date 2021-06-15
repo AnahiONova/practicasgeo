@@ -1,3 +1,11 @@
+auth.onAuthStateChanged(user => {
+  if(user){
+    configurarMenu(user);
+  }else {
+    configurarMenu();
+  }
+});
+
 const botonModal1 = document.getElementById("botonModal1");
 
 botonModal1.addEventListener("click", (e) =>{
@@ -75,6 +83,6 @@ botonModal2.addEventListener("click", (e) =>{
   }).catch(err =>{
 
     formaRegistrate.querySelector('.error').innerHTML = mensajeError(err.code);
-    
+
   });
 });
