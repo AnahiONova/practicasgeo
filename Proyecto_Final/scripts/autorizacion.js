@@ -99,14 +99,14 @@ entrarGoogle = () =>{
   var provider = new firebase.auth.GoogleAuthProvider();
 
   firebase.auth().signInWithPopup(provider).then(function (result){
-    var token = result.credential.accessToker;
+    var token = result.credential.accessToken;
     console.log(token);
 
     var user = result.user;
     let html = `
-      <p>Nombre: $(user.displayName) </p>
-      <p>Correo: $(user.email) </p>
-      <img src="$(user.photoURL)">
+      <p>Nombre: ${user.displayName} </p>
+      <p>Correo: ${user.email} </p>
+      <img src="${user.photoURL}">
     `;
 
     datosdelacuenta.innerHTML = html;
@@ -115,7 +115,7 @@ entrarGoogle = () =>{
     formaIngresar.reset();
     formaIngresar.querySelector('.error').innerHTML = '';
 
-  }).catch(function(){
+  }).catch(function(error){
     console.log(error);
   });
 }
